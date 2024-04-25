@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+
+<html> 
+ 
+   <head> 
+      <meta charset="utf-8"> 
+      <title>CONTACT ME</title> 
+      <link rel="stylesheet" href="INDEX.css"> 
+
+      <style>
+          body {
+            background-image: url('PICTURES/flowerbackground.jpg'); 
+           
+        }
+       
+        h1,p{
+            text-align: center;
+        }
+
+        div.form{
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      </style>
+   </head> 
+  
+
+   <body>
+    <div class="home-button">
+        <a href="INDEX.HTML">
+            <img src="PICTURES/home.png" width="100">
+        </a>
+        </div>
+
+    <script type="text/javascript">
+        document.write("<h1>Do you want to get to know me more?</h1>");
+        document.write("<p>Complete this form and let me contact you!</p>")
+        function showPopup() {
+        alert("Thank you for submitting!! I will contact you soon!");
+        
+    }
+    </script>
+
+
+    
+
+    <div class="form">
+    <form method="post" action="action_page.php" autocomplete="on">
+
+        <b>Your name:</b> <input type="text" name="Name" size="25"><br><br>
+        <b>Your email:</b> <input type="email" name="Email"> (required) <br><br>
+        <b>Did you like my website?:</b>
+            <select name="Language">
+                <option selected>YES!!!</option>
+                <option>Maybe</option>
+                <option>No, it needs more improvement</option>
+            </select><br><br>
+        <b>Your occupation:</b>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="male">Teacher</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Student</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Other</label><br><br>
+          
+        <b>Anything you would like to share with me?</b><br>
+        <textarea name="message" rows="6" cols="70"></textarea><br>
+    </div>
+        <hr> 
+        <center>
+            <input type="submit" name="submit" value="Submit Your Entries" onclick="showPopup()">
+            <input type="reset" name="reset" value="Clear Your Entries"> 
+        </center>
+    </form>
+   </body>
+</html>
